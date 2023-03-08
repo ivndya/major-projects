@@ -114,6 +114,12 @@ body {
   margin: 0 auto 17px;
   color: var(--white-color);
 }
+@media screen and (max-width: 1280px) {
+  .header__title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (max-width: 380px) {
   .h1 {
     font-size: 46px;
@@ -386,30 +392,13 @@ body {
   color: var(--accent-color);
   margin-bottom: 23px;
 }
-.question__h3.close {
+.question__h3 {
   margin-bottom: 31px;
 }
 .question__p {
   margin-bottom: 40px;
   color: var(--gray-color);
   max-width: 730px;
-}
-.question__h3.open::before,
-.question__h3.close::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url(../img/Polygon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 9px;
-}
-.question__h3.open::before {
-  transform: rotate(-90deg);
-}
-.question__h3.close + .question__p {
-  display: none;
 }
 @media screen and (max-width: 1280px) {
   .question {
@@ -527,6 +516,10 @@ body {
 }
 .contacts__h3 {
   text-transform: uppercase;
+}
+.contacts__h3 a {
+  text-decoration: none;
+  color: inherit;
 }
 .contacts__h3-gray {
   color: var(--gray-color);
